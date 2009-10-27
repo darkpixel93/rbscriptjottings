@@ -23,7 +23,6 @@ Protected Class Docs
 		LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 		OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 		THE SOFTWARE.
-		
 	#tag EndNote
 
 	#tag Note, Name = Readme
@@ -43,6 +42,10 @@ Protected Class Docs
 		RBSbasicMod.RBSbasic) and a window with (at a
 		minimum) an EditField or TextArea for script source
 		and a "run" button. This is basically a demo setup.
+		
+		The module can also contain constants
+		which are useful RBScript code snippets and/or
+		class definitions etc.
 		
 		The idea is that a contributor can either help to 
 		complete an existing mini-project (such as 

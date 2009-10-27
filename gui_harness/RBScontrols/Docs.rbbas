@@ -4,6 +4,7 @@ Protected Class Docs
 		
 		This mini-project is represented by the Window winRBScontrols and
 		the module RBSControls
+		class definitions for controls  will live in constants within the module
 		
 		It also requires the base framework supplied by
 		winType_InputDialog, and the contents of
