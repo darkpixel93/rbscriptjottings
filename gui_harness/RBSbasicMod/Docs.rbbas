@@ -39,7 +39,7 @@ Protected Class Docs
 		(preferably with the ultimate parent
 		RBSbasicMod.RBSbasic), a context class 
 		(preferably with the ultimate parent 
-		RBSbasicMod.RBSbasic) and a window with (at a
+		RBSbasicMod.RBScontextBasic) and a window with (at a
 		minimum) an EditField or TextArea for script source
 		and a "run" button. This is basically a demo setup.
 		

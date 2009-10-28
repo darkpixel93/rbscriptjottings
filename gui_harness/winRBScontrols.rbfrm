@@ -82,9 +82,7 @@ Begin Window winRBScontrols
       LockedInPosition=   False
       Scope           =   0
       Source          =   ""
-      TabIndex        =   1
       TabPanelIndex   =   0
-      TabStop         =   True
       Top             =   -13
       Width           =   32
    End
@@ -103,9 +101,7 @@ Begin Window winRBScontrols
       LockTop         =   True
       Maximum         =   100
       Scope           =   0
-      TabIndex        =   2
       TabPanelIndex   =   0
-      TabStop         =   True
       Top             =   161
       Value           =   0
       Visible         =   True
@@ -145,7 +141,7 @@ Begin Window winRBScontrols
       TabIndex        =   1
       TabPanelIndex   =   0
       TabStop         =   True
-      Text            =   "MsgBox ""Cell 2,2 = "" + ListBox1.Cell( 2, 2 )\r\n\r\nListBox1.Cell( 2, 2 ) = input (""Value for C2"")\r\nMsgBox ""Cell 2,2 = "" + ListBox1.Cell( 2, 2 )\r\n\r\nif progressbar1.value < 50 then\r\n  progressbar1.value = progressbar1.maximum\r\nelse\r\n  progressbar1.value = 30\r\nend if\r\n"
+      Text            =   "MsgBox ""Cell 2,2 = "" + ListBox1.Cell( 2, 2 )\r\n\r\nListBox1.Cell( 2, 2 ) = input (""Value for C2"")\r\nMsgBox ""Cell 2,2 = "" + ListBox1.Cell( 2, 2 )\r\n\r\nif progressbar1.value < 50 then\r\n  progressbar1.value = progressbar1.maximum\r\nelse\r\n  progressbar1.value = 30\r\nend if\r\n\r\ndim i as integer\r\ni = msgbox( ""World"", 3, ""Hello"" )\r\nselect case i\r\ncase 6\r\n  print ""yes""\r\ncase 7\r\n  print ""no""\r\ncase 2\r\n print ""cancel""\r\nend select\r\n\r\n"
       TextColor       =   0
       TextFont        =   "System"
       TextSize        =   0
