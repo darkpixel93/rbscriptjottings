@@ -76,12 +76,12 @@ Begin Window winType_InputDialog
       Caption         =   "Cancel"
       Default         =   ""
       Enabled         =   True
-      Height          =   20
+      Height          =   35
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   ""
-      Left            =   287
+      Left            =   288
       LockBottom      =   True
       LockedInPosition=   False
       LockLeft        =   ""
@@ -94,7 +94,7 @@ Begin Window winType_InputDialog
       TextFont        =   "System"
       TextSize        =   0
       TextUnit        =   0
-      Top             =   110
+      Top             =   95
       Underline       =   ""
       Visible         =   True
       Width           =   80
@@ -106,7 +106,7 @@ Begin Window winType_InputDialog
       Caption         =   "OK"
       Default         =   True
       Enabled         =   True
-      Height          =   20
+      Height          =   35
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
@@ -124,7 +124,7 @@ Begin Window winType_InputDialog
       TextFont        =   "System"
       TextSize        =   0
       TextUnit        =   0
-      Top             =   110
+      Top             =   95
       Underline       =   ""
       Visible         =   True
       Width           =   80
@@ -150,7 +150,6 @@ Begin Window winType_InputDialog
       Scope           =   0
       TabIndex        =   3
       TabPanelIndex   =   0
-      TabStop         =   True
       Text            =   "Untitled"
       TextAlign       =   0
       TextColor       =   0

@@ -82,9 +82,7 @@ Begin Window winRBScontrols
       LockedInPosition=   False
       Scope           =   0
       Source          =   ""
-      TabIndex        =   1
       TabPanelIndex   =   0
-      TabStop         =   True
       Top             =   -13
       Width           =   32
    End
@@ -103,9 +101,7 @@ Begin Window winRBScontrols
       LockTop         =   True
       Maximum         =   100
       Scope           =   0
-      TabIndex        =   2
       TabPanelIndex   =   0
-      TabStop         =   True
       Top             =   161
       Value           =   0
       Visible         =   True
@@ -163,7 +159,7 @@ Begin Window winRBScontrols
       Caption         =   "Run"
       Default         =   ""
       Enabled         =   True
-      Height          =   22
+      Height          =   35
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""

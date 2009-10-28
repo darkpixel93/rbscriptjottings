@@ -89,7 +89,7 @@ Begin Window winRBSdates
       Caption         =   "Run"
       Default         =   ""
       Enabled         =   True
-      Height          =   22
+      Height          =   35
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
@@ -107,7 +107,7 @@ Begin Window winRBSdates
       TextFont        =   "System"
       TextSize        =   0
       TextUnit        =   0
-      Top             =   39
+      Top             =   33
       Underline       =   ""
       Visible         =   True
       Width           =   80
