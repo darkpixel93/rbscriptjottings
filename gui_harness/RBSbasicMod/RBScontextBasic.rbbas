@@ -41,6 +41,12 @@ Protected Class RBScontextBasic
 		End Function
 	#tag EndMethod
 
+	#tag Method, Flags = &h1
+		Protected Sub Speak(msg as String)
+		  REALbasic.Speak msg
+		End Sub
+	#tag EndMethod
+
 
 	#tag ViewBehavior
 		#tag ViewProperty
