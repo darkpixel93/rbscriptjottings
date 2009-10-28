@@ -2,7 +2,6 @@
 Begin Window winType_InputDialog
    BackColor       =   16777215
    Backdrop        =   ""
-   BalloonHelp     =   ""
    CloseButton     =   True
    Composite       =   False
    Frame           =   1
@@ -22,7 +21,7 @@ Begin Window winType_InputDialog
    MinWidth        =   64
    Placement       =   0
    Resizeable      =   False
-   Title           =   "Untitled"
+   Title           =   "Input needed"
    Visible         =   True
    Width           =   502
    Begin EditField EditField1
@@ -73,7 +72,7 @@ Begin Window winType_InputDialog
    Begin PushButton btnCancel
       AutoDeactivate  =   True
       Bold            =   ""
-      Cancel          =   ""
+      Cancel          =   True
       Caption         =   "Cancel"
       Default         =   ""
       Enabled         =   True
@@ -105,7 +104,7 @@ Begin Window winType_InputDialog
       Bold            =   ""
       Cancel          =   ""
       Caption         =   "OK"
-      Default         =   ""
+      Default         =   True
       Enabled         =   True
       Height          =   20
       HelpTag         =   ""
@@ -151,7 +150,6 @@ Begin Window winType_InputDialog
       Scope           =   0
       TabIndex        =   3
       TabPanelIndex   =   0
-      TabStop         =   True
       Text            =   "Untitled"
       TextAlign       =   0
       TextColor       =   0
