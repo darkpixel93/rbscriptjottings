@@ -7,7 +7,7 @@ Begin Window winMainMenu
    Frame           =   0
    FullScreen      =   False
    HasBackColor    =   False
-   Height          =   1.3e+2
+   Height          =   1.43e+2
    ImplicitInstance=   True
    LiveResize      =   True
    MacProcID       =   0
@@ -23,7 +23,7 @@ Begin Window winMainMenu
    Resizeable      =   True
    Title           =   "Main menu"
    Visible         =   True
-   Width           =   3.37e+2
+   Width           =   3.87e+2
    Begin PushButton PushButton1
       AutoDeactivate  =   True
       Bold            =   ""
@@ -31,7 +31,7 @@ Begin Window winMainMenu
       Caption         =   "RBScontrols"
       Default         =   ""
       Enabled         =   True
-      Height          =   22
+      Height          =   35
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
@@ -52,7 +52,7 @@ Begin Window winMainMenu
       Top             =   21
       Underline       =   ""
       Visible         =   True
-      Width           =   80
+      Width           =   100
    End
    Begin PushButton PushButton2
       AutoDeactivate  =   True
@@ -61,12 +61,12 @@ Begin Window winMainMenu
       Caption         =   "RBSdates"
       Default         =   ""
       Enabled         =   True
-      Height          =   22
+      Height          =   35
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   ""
-      Left            =   112
+      Left            =   132
       LockBottom      =   ""
       LockedInPosition=   False
       LockLeft        =   ""
@@ -82,7 +82,7 @@ Begin Window winMainMenu
       Top             =   21
       Underline       =   ""
       Visible         =   True
-      Width           =   80
+      Width           =   100
    End
 End
 #tag EndWindow
