@@ -12,7 +12,7 @@ Begin Window winRBScontrols
    LiveResize      =   True
    MacProcID       =   0
    MaxHeight       =   32000
-   MaximizeButton  =   False
+   MaximizeButton  =   True
    MaxWidth        =   32000
    MenuBar         =   ""
    MenuBarVisible  =   True
@@ -141,7 +141,7 @@ Begin Window winRBScontrols
       TabIndex        =   1
       TabPanelIndex   =   0
       TabStop         =   True
-      Text            =   "MsgBox ""Cell 2,2 = "" + ListBox1.Cell( 2, 2 )\r\n\r\nListBox1.Cell( 2, 2 ) = input (""Value for C2"")\r\nMsgBox ""Cell 2,2 = "" + ListBox1.Cell( 2, 2 )\r\n\r\nif progressbar1.value < 50 then\r\n  progressbar1.value = progressbar1.maximum\r\nelse\r\n  progressbar1.value = 30\r\nend if\r\n\r\ndim i as integer\r\ni = msgbox( ""World"", 3, ""Hello"" )\r\nselect case i\r\ncase 6\r\n  print ""yes""\r\ncase 7\r\n  print ""no""\r\ncase 2\r\n print ""cancel""\r\nend select\r\n\r\n"
+      Text            =   "MsgBox ""Cell 2,2 = "" + ListBox1.Cell( 2, 2 )\r\n\r\nListBox1.Cell( 2, 2 ) = input (""Value for C2"")\r\nMsgBox ""Cell 2,2 = "" + ListBox1.Cell( 2, 2 )\r\n\r\nif progressbar1.value < 50 then\r\n  progressbar1.value = progressbar1.maximum\r\nelse\r\n  progressbar1.value = 30\r\nend if\r\n\r\ndim i as integer\r\ndim msg as string = ""Oops""\r\n\r\ni = msgbox( ""World"", 3, ""Hello"" )\r\nselect case i\r\ncase 6\r\n  msg = ""yes""\r\ncase 7\r\n  msg = ""no""\r\ncase 2\r\n msg = ""cancel""\r\nend select\r\nprint msg\r\nspeak msg\r\n"
       TextColor       =   0
       TextFont        =   "System"
       TextSize        =   0
