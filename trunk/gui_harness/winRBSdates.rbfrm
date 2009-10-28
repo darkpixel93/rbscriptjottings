@@ -1,5 +1,5 @@
 #tag Window
-Begin Window winRBScontrols
+Begin Window winRBSdates
    BackColor       =   16777215
    Backdrop        =   ""
    CloseButton     =   True
@@ -24,56 +24,7 @@ Begin Window winRBScontrols
    Title           =   "Untitled"
    Visible         =   True
    Width           =   600
-   Begin Listbox myFirstLB
-      AutoDeactivate  =   True
-      AutoHideScrollbars=   True
-      Bold            =   ""
-      Border          =   True
-      ColumnCount     =   5
-      ColumnsResizable=   ""
-      ColumnWidths    =   ""
-      DataField       =   ""
-      DataSource      =   ""
-      DefaultRowHeight=   -1
-      Enabled         =   True
-      EnableDrag      =   ""
-      EnableDragReorder=   ""
-      GridLinesHorizontal=   0
-      GridLinesVertical=   0
-      HasHeading      =   True
-      HeadingIndex    =   -1
-      Height          =   129
-      HelpTag         =   ""
-      Hierarchical    =   ""
-      Index           =   -2147483648
-      InitialParent   =   ""
-      InitialValue    =   "zero	one	two	three	four\r\na0	a1	a2	a3	a4\r\nb0	b1	b2	b3	b4\r\nc0	c1	c2	c3	c4"
-      Italic          =   ""
-      Left            =   20
-      LockBottom      =   ""
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      RequiresSelection=   ""
-      Scope           =   0
-      ScrollbarHorizontal=   ""
-      ScrollBarVertical=   True
-      SelectionType   =   0
-      TabIndex        =   0
-      TabPanelIndex   =   0
-      TabStop         =   True
-      TextFont        =   "System"
-      TextSize        =   0
-      TextUnit        =   0
-      Top             =   20
-      Underline       =   ""
-      UseFocusRing    =   True
-      Visible         =   True
-      Width           =   560
-      _ScrollWidth    =   -1
-   End
-   Begin RBScontrols.RBScriptControls RbScript1
+   Begin RBSdates.RBscriptDates RbScript1
       EncodingFont    =   ""
       Height          =   32
       Index           =   -2147483648
@@ -82,34 +33,9 @@ Begin Window winRBScontrols
       LockedInPosition=   False
       Scope           =   0
       Source          =   ""
-      TabIndex        =   1
       TabPanelIndex   =   0
-      TabStop         =   True
       Top             =   -13
       Width           =   32
-   End
-   Begin ProgressBar ProgressBar1
-      AutoDeactivate  =   True
-      Enabled         =   True
-      Height          =   20
-      HelpTag         =   ""
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Left            =   20
-      LockBottom      =   ""
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   True
-      LockTop         =   True
-      Maximum         =   100
-      Scope           =   0
-      TabIndex        =   2
-      TabPanelIndex   =   0
-      TabStop         =   True
-      Top             =   161
-      Value           =   0
-      Visible         =   True
-      Width           =   560
    End
    Begin EditField EditField1
       AcceptTabs      =   ""
@@ -122,12 +48,12 @@ Begin Window winRBScontrols
       DataSource      =   ""
       Enabled         =   True
       Format          =   ""
-      Height          =   187
+      Height          =   273
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   ""
-      Left            =   26
+      Left            =   20
       LimitText       =   0
       LockBottom      =   True
       LockedInPosition=   False
@@ -145,16 +71,16 @@ Begin Window winRBScontrols
       TabIndex        =   1
       TabPanelIndex   =   0
       TabStop         =   True
-      Text            =   "MsgBox ""Cell 2,2 = "" + ListBox1.Cell( 2, 2 )\r\n\r\nListBox1.Cell( 2, 2 ) = input (""Value for C2"")\r\nMsgBox ""Cell 2,2 = "" + ListBox1.Cell( 2, 2 )\r\n\r\nif progressbar1.value < 50 then\r\n  progressbar1.value = progressbar1.maximum\r\nelse\r\n  progressbar1.value = 30\r\nend if\r\n\r\ndim i as integer\r\ndim msg as string = ""Oops""\r\n\r\ni = msgbox( ""World"", 3, ""Hello"" )\r\nselect case i\r\ncase 6\r\n  msg = ""yes""\r\ncase 7\r\n  msg = ""no""\r\ncase 2\r\n msg = ""cancel""\r\nend select\r\nprint msg\r\nspeak msg\r\n"
+      Text            =   "dim d as Date\r\nd = new Date\r\n\r\nmsgbox d.SQLDateTime\r\n\r\nd.hour = d.hour + 1\r\nd.year = d.year + 1\r\n\r\nmsgbox d.SQLDateTime\r\n"
       TextColor       =   0
       TextFont        =   "System"
       TextSize        =   0
       TextUnit        =   0
-      Top             =   193
+      Top             =   107
       Underline       =   ""
       UseFocusRing    =   True
       Visible         =   True
-      Width           =   451
+      Width           =   560
    End
    Begin PushButton btnRun
       AutoDeactivate  =   True
@@ -168,12 +94,12 @@ Begin Window winRBScontrols
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   ""
-      Left            =   500
-      LockBottom      =   True
+      Left            =   507
+      LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   ""
       LockRight       =   True
-      LockTop         =   ""
+      LockTop         =   True
       Scope           =   0
       TabIndex        =   2
       TabPanelIndex   =   0
@@ -181,7 +107,7 @@ Begin Window winRBScontrols
       TextFont        =   "System"
       TextSize        =   0
       TextUnit        =   0
-      Top             =   358
+      Top             =   39
       Underline       =   ""
       Visible         =   True
       Width           =   80
@@ -197,16 +123,16 @@ Begin Window winRBScontrols
       DataSource      =   ""
       Enabled         =   True
       Format          =   ""
-      Height          =   153
+      Height          =   73
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   ""
-      Left            =   489
+      Left            =   20
       LimitText       =   0
-      LockBottom      =   True
+      LockBottom      =   False
       LockedInPosition=   False
-      LockLeft        =   ""
+      LockLeft        =   True
       LockRight       =   True
       LockTop         =   True
       Mask            =   ""
@@ -225,11 +151,11 @@ Begin Window winRBScontrols
       TextFont        =   "System"
       TextSize        =   0
       TextUnit        =   0
-      Top             =   193
+      Top             =   14
       Underline       =   ""
       UseFocusRing    =   True
       Visible         =   True
-      Width           =   91
+      Width           =   468
    End
 End
 #tag EndWindow
@@ -237,14 +163,9 @@ End
 #tag WindowCode
 	#tag Event
 		Sub Open()
-		  dim cx As new RBScontrols.RBScontextControls
-		  If not cx.AddRectControl( "Lb1", myFirstLB ) Then
-		    MsgBox "failed to add listbox"
-		  End If
-		  if not cx.AddRectControl( "Pbar1", ProgressBar1 ) then
-		    MsgBox "failed to add ProgressBar"
-		  end if
+		  dim cx As new RBSdates.RBScontextDates
 		  RbScript1.Context = cx
+		  
 		End Sub
 	#tag EndEvent
 
@@ -254,19 +175,8 @@ End
 #tag Events btnRun
 	#tag Event
 		Sub Action()
-		  //Listbox (myFirstLB) is known to the context as "Lb1"
-		  //and will be known to the script as ListBox1
+		  preText.Text = RBSdates.kClassDateDef
 		  
-		  preText.text = RBScontrols.kClassListboxDef + _
-		  "Dim Listbox1 As Listbox" + EndOfLine + _
-		  "Listbox1 = New Listbox( ""Lb1"" )" + EndOfLine
-		  
-		  preText.Text = preText.Text + _
-		  RBScontrols.kClassProgressBarDef + EndOfLine+ _
-		  "Dim ProgressBar1 As ProgressBar" + EndOfLine + _
-		  "ProgressBar1 = New ProgressBar( ""Pbar1"" )" + EndOfLine
-		  
-		  preText.HelpTag = preText.Text
 		  RbScript1.Source = _
 		  preText.Text + EndOfLine + _
 		  EditField1.Text

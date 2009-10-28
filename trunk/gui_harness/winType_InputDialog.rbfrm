@@ -150,6 +150,7 @@ Begin Window winType_InputDialog
       Scope           =   0
       TabIndex        =   3
       TabPanelIndex   =   0
+      TabStop         =   True
       Text            =   "Untitled"
       TextAlign       =   0
       TextColor       =   0

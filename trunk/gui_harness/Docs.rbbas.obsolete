@@ -1,0 +1,36 @@
+#tag Class
+Protected Class Docs
+	#tag Note, Name = Information
+		
+		This mini-project is represented by the Window winRBSdates and
+		the module RBSdates
+		class definitions for controls  will live in constants within the module
+		
+		It also requires the base framework supplied by
+		winType_InputDialog, and the contents of
+		RBSbasicMod
+		
+		There is a pushbutton on winMainMenu which
+		launches this mini-project's demo window.
+		
+		The eventual aim of this part of the project is
+		to give RB coders the ability to give something
+		that looks like the Date class to RBScript coders 
+		using their apps. 
+		
+		Within the script, a date object is represented
+		by an instance with the properties TotalSeconds
+		and GMToffset populated. The constructor
+		populates these from an array of two doubles returned
+		by DateHereAndNow
+		
+		All date operations are referred to the context
+		offering TotalSeconds and GMToffset as arguments
+		and requesting integers or strings.
+		
+		Feel free to offer comments or improved code.
+	#tag EndNote
+
+
+End Class
+#tag EndClass
