@@ -71,7 +71,7 @@ Begin Window winRBSdates
       TabIndex        =   1
       TabPanelIndex   =   0
       TabStop         =   True
-      Text            =   "dim d as Date\r\nd = new Date\r\n\r\nmsgbox d.SQLDateTime\r\n\r\nd.hour = d.hour + 1\r\nd.year = d.year + 1\r\n\r\nmsgbox d.SQLDateTime\r\n"
+      Text            =   "dim d as Date\r\nd = new Date\r\ndim msg as String\r\nmsg = d.SQLDateTime\r\n\r\nd.hour = d.hour + 1\r\nd.year = d.year + 1\r\nmsg = msg + endofline + d.SQLDateTime\r\n\r\nd.GMToffset = 0\r\nd.Totalseconds = 0\r\nmsg = msg + endofline + d.SQLDateTime\r\n\r\nd.GMToffset = 12\r\nmsgBox msg + endofline + d.SQLDateTime\r\n"
       TextColor       =   0
       TextFont        =   "System"
       TextSize        =   0

@@ -2,6 +2,45 @@
 	Protected Class RBScontextDates
 	Inherits RBSbasicMod.RBScontextBasic
 		#tag Method, Flags = &h1
+			Protected Function DateDouble(Totalsecs As Double, ofset As Double, Type As String) As Double
+			  Const errval = -9.9
+			  dim d As new date
+			  d.GMTOffset = ofset
+			  d.TotalSeconds = Totalsecs
+			  
+			  select case Type
+			  case"TotalSeconds"
+			    Return d.TotalSeconds
+			  case"GMToffset"
+			    Return d.GMTOffset
+			  end select
+			  
+			  Return errval
+			End Function
+		#tag EndMethod
+
+		#tag Method, Flags = &h1
+			Protected Function DateDouble(Totalsecs As Double, ofset As Double, Type As String, Valu As Double) As Double()
+			  dim retVal(1) As Double
+			  
+			  dim d As new date
+			  d.GMTOffset = ofset
+			  d.TotalSeconds = Totalsecs
+			  
+			  select case Type
+			  case"Totalseconds"
+			    d.TotalSeconds = valu
+			  case"GMTOffset"
+			    d.GMTOffset = valu
+			  end select
+			  
+			  retval(0) = d.TotalSeconds
+			  retval(1) = d.GMTOffset
+			  Return retval
+			End Function
+		#tag EndMethod
+
+		#tag Method, Flags = &h1
 			Protected Function DateHereAndNow() As Double()
 			  dim d As new date
 			  dim retval(1) As Double
