@@ -21,7 +21,7 @@ Begin Window winRBSdates
    MinWidth        =   64
    Placement       =   0
    Resizeable      =   True
-   Title           =   "Untitled"
+   Title           =   "Dates"
    Visible         =   True
    Width           =   600
    Begin RBSdates.RBscriptDates RbScript1
@@ -94,7 +94,7 @@ Begin Window winRBSdates
       Index           =   -2147483648
       InitialParent   =   ""
       Italic          =   ""
-      Left            =   507
+      Left            =   500
       LockBottom      =   False
       LockedInPosition=   False
       LockLeft        =   ""
@@ -165,6 +165,8 @@ End
 		Sub Open()
 		  dim cx As new RBSdates.RBScontextDates
 		  RbScript1.Context = cx
+		  RbScript1.errLinesBefore = 3
+		  RbScript1.errLinesAfter = 3
 		  
 		End Sub
 	#tag EndEvent
@@ -172,9 +174,25 @@ End
 
 #tag EndWindowCode
 
+#tag Events RbScript1
+	#tag Event
+		Sub GeneralError(Typ As String, line As Integer, errorNumber As Integer, errorMsg As String, codeText As String)
+		  Dim msg as String = Typ + " Error [" + _
+		  format( errorNumber, "0" ) + _
+		  "] at Line " + _
+		  format( line , "0" ) _
+		  +" " + errorMsg
+		  system.DebugLog msg
+		  system.DebugLog codeText
+		  
+		  self.title = msg
+		End Sub
+	#tag EndEvent
+#tag EndEvents
 #tag Events btnRun
 	#tag Event
 		Sub Action()
+		  self.Title = "Dates"
 		  preText.Text = RBSdates.kClassDateDef
 		  
 		  RbScript1.Source = _
