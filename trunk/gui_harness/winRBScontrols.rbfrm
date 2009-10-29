@@ -21,7 +21,7 @@ Begin Window winRBScontrols
    MinWidth        =   64
    Placement       =   0
    Resizeable      =   True
-   Title           =   "Untitled"
+   Title           =   "Controls"
    Visible         =   True
    Width           =   600
    Begin Listbox myFirstLB
@@ -241,15 +241,34 @@ End
 		    MsgBox "failed to add ProgressBar"
 		  end if
 		  RbScript1.Context = cx
+		  RbScript1.errLinesBefore = 3
+		  RbScript1.errLinesAfter = 2
 		End Sub
 	#tag EndEvent
 
 
 #tag EndWindowCode
 
+#tag Events RbScript1
+	#tag Event
+		Sub GeneralError(Typ As String, line As Integer, errorNumber As Integer, errorMsg As String, codeText As String)
+		  Dim msg as String = Typ + " Error [" + _
+		  format( errorNumber, "0" ) + _
+		  "] at Line " + _
+		  format( line , "0" ) _
+		  +" " + errorMsg
+		  system.DebugLog msg
+		  system.DebugLog codeText
+		  
+		  self.title = msg
+		End Sub
+	#tag EndEvent
+#tag EndEvents
 #tag Events btnRun
 	#tag Event
 		Sub Action()
+		  Self.Title = "Controls"
+		  
 		  //Listbox (myFirstLB) is known to the context as "Lb1"
 		  //and will be known to the script as ListBox1
 		  
