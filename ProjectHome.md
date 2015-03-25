@@ -1,0 +1,1 @@
+A framework in which those who use RBScript can share the stuff they find out with the RB community
